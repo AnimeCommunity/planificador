@@ -48,7 +48,7 @@ const ControlPresupuesto = ({presupuesto, gastos, resetearApp}) => {
 
         <View style={styles.contenedorTexto}>
 
-            <Pressable style={styles.boton} onLongPress={resetearApp}>
+            <Pressable style={styles.boton} onPress={resetearApp}>
                 <Text style={styles.textoBoton}>
                     Reiniciar APP
                 </Text>
@@ -103,7 +103,9 @@ const styles= StyleSheet.create
     {
         fontSize: 24,
         textAlign: 'center',
-        marginBottom: 10
+        marginBottom: 10, 
+        color:'black', 
+        fontWeight:'700'
     },
     label:
     {

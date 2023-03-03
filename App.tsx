@@ -34,7 +34,7 @@ function App(): JSX.Element {
   const [gastosFiltrados, setGastosFiltrados] = useState([])
 
   const handleNuevoPresupuesto = (presupuesto) => {
-    if (Number(presupuesto) > 0) {
+    if (Number(presupuesto) > 1000) {
       setIsValidPresupuesto(true)
     } else {
       Alert.alert('Error', 'Presupuesto no valdio')

@@ -58,14 +58,18 @@ const styles = StyleSheet.create
             padding:10,
             borderRadius:10,
             textAlign: 'center',
-            marginTop: 30
+            marginTop: 30,
+            borderColor: '#3B82F6',
+            fontWeight: '800',
+            borderWidth: 1
         },
         boton:
         {
             marginTop:30,
             backgroundColor: '#1048A4',
             padding:10,
-            borderRadius: 10
+            borderRadius: 10,
+            
         },
         btnTexto:
         {

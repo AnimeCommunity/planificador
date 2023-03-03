@@ -80,6 +80,7 @@ const FormularioGasto = ({ setModal, handleGasto, setGasto, gasto, eliminarGasto
                     <Text style={styles.label}>
                         Cantegoria gasto
                     </Text>
+                    <View style={{borderRadius: 5, borderWidth:1,  borderColor:'#3B82F6'}}>
                     <Picker selectedValue={categoria} onValueChange={(value) => { setCategoria(value) }}>
                         <Picker.Item label='-- Seleccione --' value='' />
                         <Picker.Item label='Ahorro' value='ahorro' />
@@ -90,6 +91,7 @@ const FormularioGasto = ({ setModal, handleGasto, setGasto, gasto, eliminarGasto
                         <Picker.Item label='Salud' value='salud' />
                         <Picker.Item label='Suscripciones' value='suscripciones' />
                     </Picker>
+                    </View>
                 </View>
 
                 <Pressable style={styles.submitBtn} onPress={() => handleGasto({ nombre, cantidad, categoria, id, fecha })}>
@@ -118,7 +120,8 @@ const styles = StyleSheet.create
             textAlign: 'center',
             fontSize: 28,
             marginBottom: 30,
-            color: '#64748B'
+            color: '#64748B',
+            fontWeight:'900'
         },
         campo:
         {
@@ -129,14 +132,17 @@ const styles = StyleSheet.create
             color: '#64748B',
             textTransform: 'uppercase',
             fontSize: 16,
-            fontWeight: 'bold'
+            fontWeight: '800'
         },
         input:
         {
             backgroundColor: '#F5F5F5',
             padding: 10,
             borderRadius: 10,
-            marginTop: 10
+            marginTop: 10,
+            borderColor: '#3B82F6',
+            borderWidth: 1,
+            fontWeight: '600'
         },
         submitBtn:
         {

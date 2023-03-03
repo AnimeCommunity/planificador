@@ -27,7 +27,9 @@ const Filtro = ({setFiltro, filtro, setGastosFiltrados, gastos}) => {
             <Text style={styles.label}>
                 Filtrar gastos
             </Text>
+            <View style={{ borderWidth: 1, borderColor: 'black', borderRadius: 5 }}>
             <Picker
+
                 selectedValue={filtro}
                 onValueChange={(valor)=> 
                     {
@@ -43,6 +45,7 @@ const Filtro = ({setFiltro, filtro, setGastosFiltrados, gastos}) => {
                 <Picker.Item label='Salud' value='salud' />
                 <Picker.Item label='Suscripciones' value='suscripciones' />
             </Picker>
+            </View>
         </View>
 
     )

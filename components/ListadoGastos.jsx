@@ -55,14 +55,15 @@ const styles = StyleSheet.create
         color:'#64748B',
         fontSize:30,
         textAlign: 'center',
-        fontWeight:'700',
+        fontWeight:'800',
         marginTop:20
     },
     noGastos:
     {
         marginVertical:20,
         textAlign: 'center',
-        fontSize: 20
+        fontSize: 20,
+        fontWeight:'700'
     }
 })
 

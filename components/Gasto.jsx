@@ -101,8 +101,9 @@ const styles = StyleSheet.create
         nombre:
         {
             fontSize:22,
-            color:'#64748B',
-            marginBottom:5
+            color:'#3B82F6',
+            marginBottom:5, 
+            fontWeight:'900'
         },
         fecha:
         {
@@ -112,7 +113,8 @@ const styles = StyleSheet.create
         cantidad:
         {
             fontSize: 20,
-            fontWeight: '700'
+            fontWeight: '800',
+            color:'black'
         }
 
     })

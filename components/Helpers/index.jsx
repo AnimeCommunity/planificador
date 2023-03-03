@@ -1,9 +1,9 @@
 export const formatearValor = cantidad =>
 {
-    return Number(cantidad).toLocaleString('en-US', 
+    return Number(cantidad).toLocaleString('es-CO', 
     {
         style: 'currency',
-        currency: 'USD'
+        currency: 'COP'
     })
 }
 
